@@ -1,12 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
     const submitButton = document.querySelector('.submit-button');
-    const inputFields = document.querySelectorAll('.input-field');
+    const briefInput = document.querySelector('.brief-input');
 
     submitButton.addEventListener('click', () => {
-        let briefContent = '';
-        inputFields.forEach(field => {
-            briefContent += field.value + '\n';
-        });
-        alert('Brief submitted:\n\n' + briefContent);
+        const briefContent = briefInput.value;
+        if (briefContent.trim() !== '') {
+            alert('Brief submitted:\n\n' + briefContent);
+            briefInput.value = ''; // Clear the input after submission
+        } else {
+            alert('Please enter a brief before submitting.');
+        }
     });
 });
