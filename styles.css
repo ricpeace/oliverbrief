@@ -87,6 +87,16 @@ h1 {
     font-size: 14px;
 }
 
+/* Add this if you want to style links */
+a {
+    color: #FFCB05;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 @media (max-width: 480px) {
     .phone-frame {
         padding: 10px;
