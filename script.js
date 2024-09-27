@@ -1,4 +1,9 @@
-const OPENAI_API_KEY = 'your_openai_api_key_here';
+require('dotenv').config();
+
+// Use OPENAI_API_KEY in your API calls
+
+const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
+
 const API_ENDPOINT = 'https://api.openai.com/v1/chat/completions';
 
 const prefixPrompt = "You are an AI assistant specializing in creative briefs for advertising campaigns. Based on the following brief, provide a concise summary and three creative ideas for the campaign:";
