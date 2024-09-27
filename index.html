@@ -13,13 +13,19 @@
         </header>
 
         <main>
-            <img src="https://beezcontent.com/wp-content/uploads/2022/08/oliver-agency-logo-vector-svg.png" alt="OLIVER Agency Logo" class="logo">
+            <img src="oliver_logo.png" alt="OLIVER Agency Logo" class="logo">
             
             <textarea placeholder="Enter your brief here..." class="brief-input"></textarea>
 
             <button class="submit-button">Submit</button>
+
+            <div class="result-container">
+                <h2>AI Response:</h2>
+                <p id="result-text"></p>
+            </div>
         </main>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
