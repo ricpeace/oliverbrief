@@ -10,18 +10,20 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    padding: 20px;
 }
 
 .phone-frame {
-    width: 375px;
-    height: 812px;
+    width: 100%;
+    max-width: 375px;
     background-color: white;
     border-radius: 40px;
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header {
@@ -41,7 +43,7 @@ h1 {
 
 .brief-input {
     width: 100%;
-    height: 200px;
+    height: 150px;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
@@ -63,4 +65,22 @@ h1 {
 
 .submit-button:hover {
     background-color: #0056b3;
+}
+
+.result-container {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.result-container h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#result-text {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 5px;
+    padding: 10px;
+    white-space: pre-wrap;
 }
